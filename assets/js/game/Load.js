@@ -1,6 +1,6 @@
 class Load {
   static preload() {
-    imagemCenario1 = loadImage('./assets/img/cenario/cenario1.png');
+    imagemCenario1 = loadImage('../../img/cenario/cenario1.png');
     imagemCenario2 = loadImage('./assets/img/cenario/cenario2.png');
     imagemCenario3 = loadImage('./assets/img/cenario/cenario3.png');
     imagemCenario4 = loadImage('./assets/img/cenario/cenario4.png');
@@ -16,7 +16,7 @@ class Load {
       './assets/img/personagem/personagem-game-over.png'
       );
 
-    imagemInimigoMorcego = loadImage('./assets/img/inimigos/morcego.png');
+    imagemInimigoMorcego = loadImage('../../img/inimigos/morcego.png');
     imagemInimigoZumbi = loadImage('./assets/img/inimigos/zumbi.png');
     imagemInimigoZumboa = loadImage('./assets/img/inimigos/zumboa.png');
     imagemInimigoOrc = loadImage('./assets/img/inimigos/orc.png');
