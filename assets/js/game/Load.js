@@ -21,8 +21,8 @@ class Load {
     imagemInimigoZumboa = loadImage('./assets/img/inimigos/zumboa.png');
     imagemInimigoOrc = loadImage('./assets/img/inimigos/orc.png');
 
-    imagemGameOver = loadImage('./assets/img/tela-game-over.png');
-    imagemTelaInicial = loadImage('./assets/img/telaInicial.png');
+    imagemGameOver = loadImage('./assets/img/tela-game-over.jpg');
+    imagemTelaInicial = loadImage('./assets/img/telaInicial.jpg');
     imagemVida = loadImage('./assets/img/coracao.png');
   
     somDoJogo = loadSound('./assets/audio/trilhaJogo.mp3');

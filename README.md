@@ -15,4 +15,4 @@ Jogo feito com os conhecimentos adquiridos na Imersão Game Dev JavaScript da Al
 
 ### Screenshot
 
-![](https://github.com/titenq/game-hipsta/blob/master/screenshot.png?raw=true)
+![](https://github.com/titenq/game-hipsta/blob/master/screenshot.jpg?raw=true)
