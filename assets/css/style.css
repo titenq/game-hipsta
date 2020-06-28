@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap);
+
+html, body {
+  font-family: 'Henny Penny', display;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../assets/img/loading.jpg');
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+canvas {
+  display: block;
+}
+
+.botao-tela-inicial {
+  font-family: 'Henny Penny', display;
+  width: 250px;
+  height: 70px;
+  background-color: #1a237e;
+  color: #fff;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  text-shadow: 2px 2px 1px #000, 0 0 5px #000;
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+.botao-tela-inicial:hover {
+  background-color: #e8eaf6;
+  color: #1a237e;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.loader {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #000, #000 40%, #e5f403);
+  animation: animate 1s linear infinite;
+  color: #fff;
+  border: 10px solid #000;
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background-color: #000;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.loader::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: linear-gradient(45deg, #000, #000 40%, #e5f403);
+  border-radius: 50%;
+  z-index: 1;
+  filter: blur(30px);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+.loader-text {
+  position: relative;
+  top: 10px;
+  color: #fff;
+  font-family: 'Henny Penny', display;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.img {
+  position: absolute;
+  top: -200px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #666666);
+  filter: drop-shadow(5px 5px 5px #666666);
+}
